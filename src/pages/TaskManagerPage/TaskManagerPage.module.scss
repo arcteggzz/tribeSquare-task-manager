@@ -1,0 +1,14 @@
+@use "../../assets/styles/" as *;
+
+.TaskManagerPage {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  @include sm() {
+  }
+}
