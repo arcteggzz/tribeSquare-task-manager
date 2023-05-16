@@ -1,20 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { TaskType } from "../../../types/Tasks";
+import { singleTaskType } from "../../../types/Tasks";
 
-export type taskStateSlice = {
-  tasks: TaskType[];
-};
-
-const initialState: taskStateSlice = {
-  tasks: [],
-};
+const initialState: singleTaskType[] = [];
 
 const tasksSlice = createSlice({
   name: "tasks",
   initialState,
   reducers: {
     addnewTask: (state, action) => {
-      state.tasks = action.payload;
+      const newTask = {
+        id: +Date.now(),
+        title: action.payload.title,
+        description: action.payload.description,
+        completed: false,
+      };
+      state.push(newTask);
     },
     // setComplete: (state, action) => {
     //   state.tasks = action.payload;
@@ -24,7 +24,7 @@ const tasksSlice = createSlice({
 
 export const { addnewTask } = tasksSlice.actions;
 
-export const getAllTasks = (state: { tasks: { tasks: TaskType[] } }) =>
-  state.tasks.tasks;
+// export const getAllTasks = (state: { tasks: { tasks: TaskType[] } }) =>
+//   state.tasks.tasks;
 
 export default tasksSlice.reducer;

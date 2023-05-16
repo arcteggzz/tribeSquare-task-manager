@@ -1,24 +1,19 @@
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 import styles from "./TaskManagerPage.module.scss";
-import { addnewTask } from "../../redux/features/Tasks/TasksSilce";
+// import { addnewTask } from "../../redux/features/Tasks/TasksSilce";
+import CreateTask from "./Components/CreateTask";
+import TaskCollection from "./Components/TaskCollection";
+import TaskControlPanel from "./Components/TaskControlPanel";
 
 const TaskManagerPage = () => {
-  const dispatch = useDispatch();
-
-  const createRandom = () => {
-    const fakeTask = {
-      title: "Go to Market",
-      description: "Buy everything",
-      completed: false,
-    };
-    dispatch(addnewTask(fakeTask));
-  };
-
   return (
     <>
       <main className={styles.TaskManagerPage}>
-        <p>Tasks</p>
-        <button onClick={() => createRandom()}>Add movie</button>
+        <div className={styles.Container}>
+          <CreateTask />
+          <TaskCollection />
+          <TaskControlPanel />
+        </div>
       </main>
     </>
   );
