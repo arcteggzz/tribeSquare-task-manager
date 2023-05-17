@@ -1,6 +1,14 @@
 import styles from "../styles/CreateTask.module.scss";
+import { openCreateTaskModal } from "../../../redux/features/Modals/ModalsSlice";
+import { useDispatch } from "react-redux";
+// import { RootState } from "../../../redux/app/store";
 
 const CreateTask = () => {
+  const dispatch = useDispatch();
+  // const createTaskModalOpen = useSelector(
+  //   (state: RootState) => state.modalsSliceReducer.createTaskModal
+  // );
+
   return (
     <>
       <main className={styles.CreateTask}>
@@ -12,7 +20,9 @@ const CreateTask = () => {
           </p>
         </div>
 
-        <button>Create New Task</button>
+        <button onClick={() => dispatch(openCreateTaskModal())}>
+          Create New Task
+        </button>
       </main>
     </>
   );
