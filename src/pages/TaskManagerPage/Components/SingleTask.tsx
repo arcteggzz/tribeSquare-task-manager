@@ -1,6 +1,6 @@
 import styles from "../styles/SingleTask.module.scss";
 import complete_checkmark from "../images/complete_checkmark.png";
-import incomplete_checkmark from "../images/incomplete_checkmark.png";
+// import incomplete_checkmark from "../images/incomplete_checkmark.png";
 
 const Category = () => {
   return (
