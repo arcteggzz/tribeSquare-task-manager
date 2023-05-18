@@ -2,7 +2,7 @@
 
 .SingleTask {
   display: grid;
-  grid-template-columns: 4% 58% 18% 20%;
+  grid-template-columns: 6% 66% 28%;
   width: 100%;
   padding: 8px;
   background-color: #f2f2f2f2;
@@ -21,9 +21,13 @@
     justify-content: center;
     align-items: center;
     img {
-      width: 100%;
+      width: 80%;
       height: auto;
       cursor: pointer;
+
+      @include sm() {
+        width: 100%;
+      }
     }
   }
 
@@ -48,18 +52,6 @@
       font-size: 14px;
       line-height: 16px;
       color: $secondaryFont;
-    }
-  }
-
-  .category_container {
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @include sm() {
-      display: none;
     }
   }
 
