@@ -1,6 +1,4 @@
-# SLS PUBLIC WEB APPLICATION FRONTEND
-
-This is the main application for the public domain for Sunday League Soccer. The repository is for only the public functionalities and is mainly information based.
+This is the repository for the TribeSquare Interview for the Frontend Developer Role.
 
 ## WEBSITE URL
 
