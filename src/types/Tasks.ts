@@ -1,6 +1,6 @@
 export type singleTaskType = {
   id: number;
-  title: String;
-  description: String;
+  title: string;
+  description: string;
   completed: boolean;
 };

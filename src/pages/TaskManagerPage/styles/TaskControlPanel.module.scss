@@ -32,30 +32,46 @@
       font-family: "Sora", sans-serif;
       box-shadow: 3px 2px 4px rgba(0, 23, 71, 0.15);
       transition: all ease 0.2s;
+      background-color: #6899e2;
 
       @include sm() {
       }
     }
 
-    .show_all_btn {
-      background-color: $secondary;
-    }
+    // .show_all_btn {
+    //   background-color: $secondary;
+    // }
     .show_all_btn:hover {
-      background-color: #6899e2;
+      background-color: #0b53be;
     }
 
-    .completed_btn {
-      background-color: #00d2b7;
-    }
+    // .completed_btn {
+    //   background-color: #00d2b7;
+    // }
     .completed_btn:hover {
       background-color: #80eadc;
     }
 
-    .pending_btn {
-      background-color: #737373;
-    }
+    // .pending_btn {
+    //   background-color: #737373;
+    // }
     .pending_btn:hover {
       background-color: #a5a5a5;
+    }
+
+    .active_btn {
+      border-radius: 16px;
+      color: #ffffff;
+      padding: 6px 18px;
+      border: none;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      cursor: pointer;
+      font-family: "Sora", sans-serif;
+      box-shadow: 3px 2px 4px rgba(0, 23, 71, 0.15);
+      transition: all ease 0.2s;
+      background-color: $secondary;
     }
   }
 
@@ -70,7 +86,7 @@
       column-gap: 20px;
     }
     @include sm() {
-      column-gap: 12px;
+      column-gap: 28px;
     }
 
     .text_box {
