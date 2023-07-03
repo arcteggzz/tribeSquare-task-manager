@@ -1,129 +1,147 @@
 @use "../../assets/styles/" as *;
 
-.container {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
+// .container {
+//   display: flex;
+//   width: 100vw;
+//   height: 100vh;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .LandingPage {
+//   display: flex;
+//   max-width: 1920px;
+//   height: 100vh;
+//   padding: 0 10vw;
+//   justify-content: center;
+//   align-items: center;
+//   column-gap: 200px;
+//   font-family: "Sora", sans-serif;
+
+//   @include sm() {
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     row-gap: 32px;
+//     padding: 0 5vw;
+//     text-align: center;
+//     width: 100vw;
+//   }
+//   @include md() {
+//     column-gap: 80px;
+//     row-gap: 32px;
+//     padding: 0 5vw;
+//     width: 100vw;
+//   }
+
+//   section {
+//     display: flex;
+//     flex-direction: column;
+//     row-gap: 32px;
+//     width: 100%;
+//     h1 {
+//       font-weight: 700;
+//       font-size: 40px;
+//       line-height: 48px;
+//       color: $secondary;
+//       @include md() {
+//         font-weight: 600;
+//         font-size: 36px;
+//         line-height: 48px;
+//       }
+//       @include sm() {
+//         font-weight: 600;
+//         font-size: 28px;
+//         line-height: 36px;
+//       }
+
+//       span {
+//         color: black;
+//         font-size: 24px;
+//         line-height: 36px;
+//       }
+//     }
+
+//     p {
+//       @include sm() {
+//         font-weight: 400;
+//         font-size: 14px;
+//         line-height: 18px;
+//       }
+//     }
+
+//     h6 {
+//       font-weight: 600;
+//       font-size: 14px;
+//       line-height: 18px;
+//     }
+
+//     .description {
+//       display: flex;
+//       flex-direction: column;
+//       row-gap: 10px;
+
+//       .warning_text {
+//         color: red;
+//         font-weight: 600;
+//       }
+//     }
+
+//     .view_submission {
+//       background-color: $secondary;
+//       border-radius: 16px;
+//       color: white;
+//       font-weight: 500;
+//       font-size: 18px;
+//       line-height: 25px;
+//       text-decoration: none;
+//       padding: 16px;
+//       width: 330px;
+//       text-align: center;
+//       border: none;
+//       cursor: pointer;
+//       transition: all 0.3s ease-in-out;
+//       @include md() {
+//         font-size: 14px;
+//         line-height: 18px;
+//         width: 240px;
+//         padding: 14px;
+//       }
+//       @include sm() {
+//         font-size: 12px;
+//         line-height: 16px;
+//         width: 100%;
+//         padding: 10px;
+//       }
+//     }
+
+//     .linkLogin:hover {
+//       background-color: $primaryHover;
+//     }
+//   }
+
+//   img {
+//     width: 25vw;
+//     @include sm() {
+//       width: 50vw;
+//       height: auto;
+//     }
+//   }
+// }
 
 .LandingPage {
   display: flex;
-  max-width: 1920px;
-  height: 100vh;
-  padding: 0 10vw;
-  justify-content: center;
   align-items: center;
-  column-gap: 200px;
-  font-family: "Sora", sans-serif;
-
-  @include sm() {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 32px;
-    padding: 0 5vw;
-    text-align: center;
-    width: 100vw;
-  }
-  @include md() {
-    column-gap: 80px;
-    row-gap: 32px;
-    padding: 0 5vw;
-    width: 100vw;
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-    width: 100%;
-    h1 {
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 48px;
-      color: $secondary;
-      @include md() {
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 48px;
-      }
-      @include sm() {
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 36px;
-      }
-
-      span {
-        color: black;
-        font-size: 24px;
-        line-height: 36px;
-      }
-    }
-
-    p {
-      @include sm() {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-      }
-    }
-
-    h6 {
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 18px;
-    }
-
-    .description {
-      display: flex;
-      flex-direction: column;
-      row-gap: 10px;
-
-      .warning_text {
-        color: red;
-        font-weight: 600;
-      }
-    }
-
-    .view_submission {
-      background-color: $secondary;
-      border-radius: 16px;
-      color: white;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 25px;
-      text-decoration: none;
-      padding: 16px;
-      width: 330px;
-      text-align: center;
-      border: none;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      @include md() {
-        font-size: 14px;
-        line-height: 18px;
-        width: 240px;
-        padding: 14px;
-      }
-      @include sm() {
-        font-size: 12px;
-        line-height: 16px;
-        width: 100%;
-        padding: 10px;
-      }
-    }
-
-    .linkLogin:hover {
-      background-color: $primaryHover;
-    }
-  }
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 
   img {
-    width: 25vw;
+    width: 4vw;
+    height: auto;
+
     @include sm() {
-      width: 50vw;
+      width: 40vw;
       height: auto;
     }
   }
